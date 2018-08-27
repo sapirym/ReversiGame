@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.collections.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="421.0" prefWidth="651.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazeapp.ConfigScreenController">
+	<padding>
+		<Insets bottom="10" left="25" right="25" top="25" />
+	</padding>
+	<children>
+		<Text id="welcomeText" fill="#ffc8c8" stroke="#b54646" text="Configuration" textAlignment="CENTER" underline="true" wrappingWidth="153.3642578125" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="1">
+			<font>
+				<Font size="24.0" />
+			</font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+		</Text>
+		<Label text="Size board:" GridPane.rowIndex="4" />
+
+		<Label text="First player color:" GridPane.rowIndex="6" />
+
+		<Label text="Second player color:" GridPane.rowIndex="7" />
+
+		<VBox alignment="BOTTOM_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+		<VBox alignment="BOTTOM_LEFT" GridPane.rowIndex="5" />
+		<Text fx:id="messageText" GridPane.rowIndex="8" />
+		<Text fx:id="messageText1" GridPane.rowIndex="9" />
+
+		<Button fx:id="save1" onAction="#save" prefHeight="39.0" prefWidth="177.0" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+
+		<ColorPicker fx:id="color" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+		<ColorPicker fx:id="color1" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+		<ComboBox fx:id="value" prefHeight="30.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<Integer fx:value="4" />
+					<Integer fx:value="6" />
+					<Integer fx:value="8" />
+					<Integer fx:value="10" />
+					<Integer fx:value="12" />
+					<Integer fx:value="14" />
+					<Integer fx:value="16" />
+					<Integer fx:value="18" />
+					<Integer fx:value="20" />
+
+				</FXCollections>
+			</items>
+		</ComboBox>
+		<!-- <Button fx:id="close" mnemonicParsing="false" onAction="#handleCloseButton" 
+			text="back" GridPane.columnIndex="2" GridPane.rowIndex="9" /> -->
+
+	</children>
+	<columnConstraints>
+		<ColumnConstraints />
+		<ColumnConstraints maxWidth="233.0" minWidth="154.0" prefWidth="155.0" />
+		<ColumnConstraints maxWidth="79.0" minWidth="0.0" prefWidth="78.0" />
+		<ColumnConstraints />
+		<ColumnConstraints />
+		<ColumnConstraints />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+		<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+		<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+		<RowConstraints maxHeight="46.0" minHeight="31.0" prefHeight="45.0" />
+		<RowConstraints maxHeight="46.0" minHeight="16.0" prefHeight="44.0" />
+		<RowConstraints maxHeight="19.0" minHeight="0.0" prefHeight="4.0" />
+		<RowConstraints maxHeight="63.0" minHeight="48.0" prefHeight="48.0" />
+		<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+
+
+
+</GridPane>

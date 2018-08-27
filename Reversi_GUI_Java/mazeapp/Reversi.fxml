@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+
+<HBox fx:id="root" alignment="TOP_CENTER" prefHeight="462.0" prefWidth="536.0" spacing="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazeapp.MenuController">
+	<children>
+		<VBox prefHeight="298.0" prefWidth="130.0" spacing="40">
+			<children>
+         <Text id="welcomeText" fill="#ffc8c8" stroke="#b54646" text="Reversi Game" textAlignment="CENTER" underline="true" wrappingWidth="199.3642578125">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+				<Button mnemonicParsing="false" onAction="#start" prefHeight="39.0" prefWidth="201.0" text="Start Game" textAlignment="CENTER" />
+				<Button onAction="#confi" prefHeight="39.0" prefWidth="208.0" text="Configuration" textAlignment="CENTER" />
+				<Button onAction="#end" prefHeight="39.0" prefWidth="206.0" text="Exit" textAlignment="CENTER" />
+			</children>
+         <rotationAxis>
+            <Point3D z="2.0" />
+         </rotationAxis>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+		</VBox>
+	</children>
+</HBox>

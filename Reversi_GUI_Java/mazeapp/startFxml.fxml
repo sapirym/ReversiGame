@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+
+<HBox fx:id="root" alignment="TOP_CENTER" prefHeight="333.0" prefWidth="229.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mazeapp.GameController">
+   <children>
+   	<VBox prefHeight="333.0" prefWidth="112.0" spacing="10">
+      <children>
+      		 <Button fx:id="close" onAction="#endGame" prefHeight="39.0" prefWidth="112.0" text="close Game" />
+      		<!--<Button onAction="#confi" prefHeight="39.0" prefWidth="112.0" text="Confi" />
+      		<Button onAction="#end" prefHeight="39.0" prefWidth="112.0" text="End Game" />-->
+            <Text fx:id="messageText" strokeType="OUTSIDE" strokeWidth="0.0" text="hadas" textAlignment="CENTER" wrappingWidth="109.205078125" />
+            <Text fx:id="messageText1" strokeType="OUTSIDE" strokeWidth="0.0" text="sapir" wrappingWidth="109.205078125" />
+            <Text fx:id="messageText2" strokeType="OUTSIDE" strokeWidth="0.0" text="roi3" wrappingWidth="109.205078125" />
+      </children>
+      </VBox>
+   	<!-- 
+   	<Label text="Size board:" GridPane.rowIndex="2" />
+    <TextField fx:id="messageText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   	      		<Text fx:id="messageText" GridPane.rowIndex="8"/>
+   	-->
+   </children>
+</HBox>

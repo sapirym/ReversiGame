@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+ - sapir yamin 316251818
+ - hadas berger: 316590215
+ -->
+
+<fx:root type="javafx.scene.layout.GridPane"
+xmlns:fx="http://javafx.com/fxml/1">
+</fx:root>
+
